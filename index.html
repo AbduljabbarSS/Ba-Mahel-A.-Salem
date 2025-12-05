@@ -78,12 +78,49 @@ a:hover { text-decoration: underline; }
     
 <section id="education">
     <h2>Education</h2>
-    <ul>
-        <li>2016–2020: Bachelor’s Degree, Saint Petersburg Electrotechnical University "LETI"</li>
-        <li>2020–2022: Master’s Degree, Saint Petersburg Electrotechnical University "LETI"</li>
-        <li>2022–Current: PhD, University of Electronic Science and Technology of China</li>
-    </ul>
+    <div class="timeline">
+        <div class="event">
+            <h3>2016–2020</h3>
+            <p>Bachelor’s Degree, Saint Petersburg Electrotechnical University "LETI"</p>
+        </div>
+        <div class="event">
+            <h3>2020–2022</h3>
+            <p>Master’s Degree, Saint Petersburg Electrotechnical University "LETI"</p>
+        </div>
+        <div class="event">
+            <h3>2022–Current</h3>
+            <p>PhD, University of Electronic Science and Technology of China</p>
+        </div>
+    </div>
 </section>
+
+<style>
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #213e63;
+}
+.timeline .event {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline .event h3 {
+    margin: 0;
+    color: #213e63;
+}
+.timeline .event::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #213e63;
+    border-radius: 50%;
+}
+</style>
+
 
     <section id="research">
         <h2>Research Interests</h2>
@@ -125,6 +162,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
