@@ -5,67 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdulljabbar S. Ba Mahel – Research Profile</title>
 <style>
-    body {
-        margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
-        background: #f7f7f7; color: #333;
-    }
-    header {
-        background: #213e63; color: white; padding: 45px 20px; text-align: center;
-    }
-    header h1 { margin: 0; font-size: 2.4rem; }
-    nav {
-        background: #333; text-align: center;
-    }
-    nav a {
-        color: white; text-decoration: none; padding: 12px 18px; display: inline-block;
-    }
-    nav a:hover { background: #555; }
-    .container {
-        width: 90%; max-width: 900px; margin: auto; padding: 20px 0;
-    }
-    section {
-        background: white; padding: 20px; margin-bottom: 22px; border-radius: 8px;
-        box-shadow: 0 0 6px rgba(0,0,0,0.1);
-    }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 6px; }
-    ul { padding-left: 18px; }
-    .btn {
-        display: inline-block; padding: 10px 18px; margin-top: 10px;
-        background: #213e63; color: white; text-decoration: none; border-radius: 6px;
-    }
-    .btn:hover { background: #162b44; }
-    a { color: #213e63; }
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Layout */
+body { font-family: Arial, sans-serif; display:flex; min-height:100vh; background:#f7f7f7; }
+.sidebar { width:260px; background:#213e63; color:white; padding:30px 20px; flex-shrink:0; display:flex; flex-direction:column; align-items:center; }
+.sidebar img { width:140px; height:140px; border-radius:50%; object-fit:cover; border:4px solid white; margin-bottom:15px; }
+.sidebar h1 { font-size:1.5rem; text-align:center; margin-bottom:5px; }
+.sidebar p { font-size:0.9rem; text-align:center; margin-bottom:10px; }
+.sidebar a { color:white; text-decoration:none; margin:5px 0; font-size:0.9rem; }
+.sidebar a:hover { text-decoration:underline; }
+.main { flex:1; padding:25px 35px; overflow:auto; }
+section { background:white; padding:20px; margin-bottom:22px; border-radius:8px; box-shadow:0 0 6px rgba(0,0,0,0.1); }
+h2 { border-bottom:2px solid #ddd; padding-bottom:6px; margin-bottom:12px; }
+ul { padding-left:18px; }
+.btn { display:inline-block; padding:10px 18px; margin-top:10px; background:#213e63; color:white; text-decoration:none; border-radius:6px; }
+.btn:hover { background:#162b44; }
+a { color:#213e63; }
+@media (max-width: 768px) {
+    body { flex-direction:column; }
+    .sidebar { width:100%; flex-direction:row; justify-content:center; padding:15px; }
+    .sidebar img { margin-right:15px; margin-bottom:0; }
+    .sidebar div { display:flex; flex-direction:column; justify-content:center; }
+    .main { padding:15px; }
+}
 </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Abdulljabbar S. Ba Mahel</h1>
-    <p>Biomedical Engineering | Artificial Intelligence | Cardiac Analysis</p>
-</header>
+<!-- Sidebar -->
+<div class="sidebar">
+    <img src="Photo.png" alt="Abdulljabbar S. Ba Mahel">
+    <div>
+        <h1>Abdulljabbar S. Ba Mahel</h1>
+        <p>Biomedical Engineering | AI | Cardiac Analysis</p>
+        <a href="https://orcid.org/0009-0006-8453-6081" target="_blank">ORCID</a>
+        <a href="https://github.com/AbduljabbarSS" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=-vpsPdsAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    </div>
+</div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research Interests</a>
-    <a href="#publications">Publications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<!-- Main Content -->
+<div class="main">
 
-<div class="container">
-
-    <!-- About -->
     <section id="about">
-        <h2>About</h2>
+        <h2>About Me</h2>
         <p>
-            I am a researcher specializing in artificial intelligence applied to biomedical engineering, with a focus on 
-            ECG analysis, cardiac disease detection, image and signal processing, and multimodal classification and segmentation.
+            I am a researcher specializing in artificial intelligence applied to biomedical engineering, 
+            with a focus on ECG analysis, cardiac disease detection, image and signal processing, 
+            and multimodal classification and segmentation.
         </p>
-        <a class="btn" href="#" target="_blank">📄 Download CV (add later)</a>
+        <a class="btn" href="#" target="_blank">📄 Download CV</a>
     </section>
 
-    <!-- Research Interests -->
     <section id="research">
         <h2>Research Interests</h2>
         <ul>
@@ -78,37 +71,32 @@
         </ul>
     </section>
 
-    <!-- Publications -->
     <section id="publications">
         <h2>Publications</h2>
         <ul>
-            <li>Coming soon...</li>
+            <li>ResNetStUNet++: Deep Model for Accurate Segmentation of the Left Ventricle in MRI (2025)</li>
+            <li>Lightweight Dual-Channel ECG Classification Model using PSD features (2024)</li>
+            <li>Deep Transfer Learning for Breast Cancer Diagnosis using Ultrasound Images (2024)</li>
         </ul>
-        <p>ORCID: <a href="https://orcid.org/0009-0006-8453-6081" target="_blank">
-            https://orcid.org/0009-0006-8453-6081
-        </a></p>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>Deep learning model for ECG arrhythmia classification</li>
+            <li>Multimodal ECG arrhythmia detection using time + frequency domain analysis</li>
             <li>Cardiac MRI segmentation (ResNetStUNet++)</li>
             <li>Dual-channel model for ECG + spectral power density (SPD)</li>
             <li>Breast cancer ultrasound classification</li>
         </ul>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
-        <p><b>Email:</b> (add later)</p>
-        <p><b>GitHub:</b> github.com/(add-your-username)</p>
-        <p><b>ORCID:</b> <a href="https://orcid.org/0009-0006-8453-6081" target="_blank">0009-0006-8453-6081</a></p>
+        <p><b>Email:</b> abduljabbarbamhel@gmail.com</p>
     </section>
 
 </div>
 
 </body>
 </html>
+
