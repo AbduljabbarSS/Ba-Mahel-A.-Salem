@@ -66,29 +66,19 @@ a:hover { text-decoration: underline; }
 
 <div class="container">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a researcher specializing in artificial intelligence applied to biomedical engineering, 
-            with a focus on ECG analysis, cardiac disease detection, image and signal processing, 
-            and multimodal classification and segmentation.
-        </p>
-        <a class="btn" href="#" target="_blank">📄 Download CV</a>
-    </section>
-    
-<section id="education">
+  <section id="education">
     <h2>Education</h2>
     <div class="timeline">
         <div class="event">
-            <h3>2016–2020</h3>
+            <span class="date">2016–2020</span>
             <p>Bachelor’s Degree, Saint Petersburg Electrotechnical University "LETI"</p>
         </div>
         <div class="event">
-            <h3>2020–2022</h3>
+            <span class="date">2020–2022</span>
             <p>Master’s Degree, Saint Petersburg Electrotechnical University "LETI"</p>
         </div>
         <div class="event">
-            <h3>2022–Current</h3>
+            <span class="date">2022–Current</span>
             <p>PhD, University of Electronic Science and Technology of China</p>
         </div>
     </div>
@@ -97,29 +87,38 @@ a:hover { text-decoration: underline; }
 <style>
 .timeline {
     position: relative;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin: 20px 0;
+    padding-left: 30px;
     border-left: 3px solid #213e63;
 }
 .timeline .event {
-    margin-bottom: 20px;
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+.timeline .event .date {
+    display: inline-block;
+    font-weight: bold;
+    color: #213e63;
+    margin-bottom: 5px;
     position: relative;
 }
-.timeline .event h3 {
-    margin: 0;
-    color: #213e63;
-}
-.timeline .event::before {
+.timeline .event .date::before {
     content: '';
     position: absolute;
-    left: -11px;
-    top: 5px;
-    width: 20px;
-    height: 20px;
+    left: -27px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
     background: #213e63;
     border-radius: 50%;
 }
+.timeline .event p {
+    margin: 0;
+    padding-left: 5px;
+}
 </style>
+
 
 
     <section id="research">
@@ -162,6 +161,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
