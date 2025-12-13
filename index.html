@@ -5,6 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abduljabbar S. Ba Mahel – Research Profile</title>
 <style>
+
+<!-- Style for all section titles with a nice underline -->
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block; /* so the line only spans part of the text */
+    padding-bottom: 6px;
+    color: #222;
+}
+
+/* Short blue/gradient line under the title */
+section h2::after {
+    content: "";
+    display: block;
+    height: 4px;                    /* thickness of the line */
+    width: 50%;                      /* length relative to text width */
+    background: linear-gradient(to right, #1a73e8, #6b5cff); /* gradient */
+    margin-top: 6px;
+    border-radius: 2px;              /* slightly rounded ends */
+}
+
+    
 body {
     margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
     background: #f7f7f7; color: #333; text-align: center;
@@ -458,6 +481,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
