@@ -11,20 +11,19 @@ section h2 {
     font-size: 2rem;
     margin-bottom: 16px;
     position: relative;
-    display: inline-block; /* so the line only spans part of the text */
+    display: block;
     padding-bottom: 6px;
     color: #222;
 }
 
-/* Short blue/gradient line under the title */
 section h2::after {
     content: "";
     display: block;
-    height: 4px;                    /* thickness of the line */
-    width: 50%;                      /* length relative to text width */
-    background: linear-gradient(to right, #1a73e8, #6b5cff); /* gradient */
+    height: 4px;
+    width: 100%; /* full width */
+    background: linear-gradient(to right, #1a73e8, #6b5cff);
     margin-top: 6px;
-    border-radius: 2px;              /* slightly rounded ends */
+    border-radius: 2px;
 }
 
     
@@ -481,6 +480,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
