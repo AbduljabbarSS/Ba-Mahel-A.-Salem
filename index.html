@@ -43,6 +43,119 @@ a:hover { text-decoration: underline; }
     background:#213e63; color:white; text-decoration:none; border-radius:6px;
 }
 .btn:hover { background:#162b44; }
+
+    <style>
+<!-------------------------------------------------------------------->
+.publications {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    color: #222;
+}
+
+.publications .container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.publications h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #e0e0e0;
+    padding-bottom: 6px;
+}
+
+.publications .pub-intro {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.publications .pub-intro a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.publications .pub-intro a:hover {
+    text-decoration: underline;
+}
+
+.publications .pub-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    gap: 26px;
+}
+
+.publications .pub-card {
+    background: linear-gradient(180deg, #ffffff 0%, #eef6fb 100%);
+    border: 1.5px solid #2a7fcf;
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 10px 28px rgba(42, 127, 207, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+}
+
+.publications .pub-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 42px rgba(42, 127, 207, 0.35);
+}
+
+.publications .pub-year {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+.publications .pub-authors {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.publications .author-highlight {
+    font-weight: 700;
+    color: #1a73e8;  /* your name highlighted in blue */
+}
+
+.publications .pub-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+.publications .pub-venue {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.publications .pub-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.publications .pub-btn:hover {
+    background-color: #1558b0;
+}
+
+@media (max-width: 600px) {
+    .publications h2 {
+        font-size: 1.6rem;
+    }
+}
+
 </style>
 </head>
 <body>
@@ -181,19 +294,150 @@ a:hover { text-decoration: underline; }
             <li>Machine Learning for Healthcare</li>
         </ul>
     </section>
-
-    <section id="publications">
+    
+<section id="publications" class="publications">
+    <div class="container">
         <h2>📄 Publications</h2>
-        
-        <ul>
-                 <!--<li>ResNetStUNet++: Deep Model for Accurate Segmentation of the Left Ventricle in MRI (2025)</li> -->
-             <!-- <li>Lightweight Dual-Channel ECG Classification Model using PSD features (2024)</li> -->
-           <!-- <li>Deep Transfer Learning for Breast Cancer Diagnosis using Ultrasound Images (2024)</li> -->
+        <p class="pub-intro">
+            This section presents a selection of my journal and conference publications.
+            For a complete list, please visit my
+            <a href="https://scholar.google.com" target="_blank">Google Scholar profile</a>.
+        </p>
+
+    <div class="pub-cards">
+
+        <div class="pub-card">
+            <div class="pub-year">2025</div>
+            <p class="pub-authors">
+                <span class="author-highlight">Ba Mahel, A. S.</span>, Al-Gaashani, M. S. A. M., Alotaibi, F. M. G., & Alkanhel, R. I.
+            </p>
+            <div class="pub-title">
+                ResST-SEUNet++: Deep Model for Accurate Segmentation of Left Ventricle and Myocardium in MRI Images
+            </div>
+            <p class="pub-venue">Bioengineering, 12(6), 665</p>
+            <a class="pub-btn" href="https://doi.org/10.3390/bioengineering12060665" target="_blank">View Paper</a>
+        </div>
+
+        <div class="pub-card">
+            <div class="pub-year">2024</div>
+            <p class="pub-authors">
+                <span class="author-highlight">Ba Mahel, A. S.</span>, Cao, S., Zhang, K., Chelloug, S. A., Alnashwan, R., & Muthanna, M. S.
+            </p>
+            <div class="pub-title">
+                Advanced integration of 2DCNN-GRU model for accurate identification of shockable life-threatening cardiac arrhythmias
+            </div>
+            <p class="pub-venue">Frontiers in Physiology, 15, 1429161</p>
+            <a class="pub-btn" href="https://doi.org/10.3389/fphys.2024.1429161" target="_blank">View Paper</a>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <p class="pub-authors">
+              <span class="author-highlight">Ba Mahel, A. S.</span>, Al-Gaashani, M. S. A. M., Alkanhel, R. I., Hassan, D. S. M., Muthanna, M. S. A., Muthanna, A., & Aziz, A.
+          </p>
+          <div class="pub-title">
+              A multi-scale deep learning framework combining MobileViT-ECA and LSTM for accurate ECG analysis
+          </div>
+          <p class="pub-venue">IEEE Access, 13, 85473–85492</p>
+          <a class="pub-btn" href="https://doi.org/10.1109/ACCESS.2025.3568026" target="_blank">View Paper</a>
+      </div>
       
-             <p style="color: gray; font-style: italic;">This section is currently under maintenance. Publications will be available soon.</p>
-        </ul>
-             
-    </section>
+      <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <p class="pub-authors">
+              <span class="author-highlight">Ba Mahel, A. S.</span>, Alotaibi, F. M. G., Lonseko, Z. M., & Rao, N.
+          </p>
+          <div class="pub-title">
+              XABH-CNN-GRU: Explainable attention-based hybrid CNN-GRU model for accurate identification of common arrhythmias
+          </div>
+          <p class="pub-venue">Journal of Electronic Science and Technology, 23(3), 100322</p>
+          <a class="pub-btn" href="https://doi.org/10.1016/j.jnlest.2025.100322" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2024</div>
+          <p class="pub-authors">
+              <span class="author-highlight">Ba Mahel, A. S.</span>, Alotaibi, F. M. G., & Rao, N.
+          </p>
+          <div class="pub-title">
+              The role of synthetic data in mitigating imbalance in deep-learning-based arrhythmia classification: A comparative study
+          </div>
+          <p class="pub-venue">Proc. SPIE IVPAI 2024, Vol. 13225, 132250I</p>
+          <a class="pub-btn" href="https://doi.org/10.1117/12.3046225" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2024</div>
+          <p class="pub-authors">
+              <span class="author-highlight">Ba Mahel, A. S.</span>, & Kalinichenko, A. N.
+          </p>
+          <div class="pub-title">
+              Classification of arrhythmia using parallel channels and different features
+          </div>
+          <p class="pub-venue">IEEE ElCon 2024, pp. 1007–1010</p>
+          <a class="pub-btn" href="https://doi.org/10.1109/ElCon61730.2024.10468316" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2022</div>
+          <p class="pub-authors">
+              <span class="author-highlight">Ba Mahel, A. S.</span>, Harold, N., & Solieman, H.
+          </p>
+          <div class="pub-title">
+              Arrhythmia classification using AlexNet model based on orthogonal leads and different time segments
+          </div>
+          <p class="pub-venue">IEEE ElConRus 2022, pp. 1312–1315</p>
+          <a class="pub-btn" href="https://doi.org/10.1109/ElConRus54750.2022.9755708" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2024</div>
+          <p class="pub-authors">
+              Alabdulhafith, M., <span class="author-highlight">Ba Mahel, A. S.</span>, Samee, N. A., Mahmoud, N. F., Talaat, R., Muthanna, M. S., & Nassef, T. M.
+          </p>
+          <div class="pub-title">
+              Automated wound care by employing a reliable U-Net architecture combined with ResNet feature encoders for monitoring chronic wounds
+          </div>
+          <p class="pub-venue">Frontiers in Medicine, 11, 1310137</p>
+          <a class="pub-btn" href="https://doi.org/10.3389/fmed.2024.1310137" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <p class="pub-authors">
+              Al-Gaashani, M. S., <span class="author-highlight">Ba Mahel, A. S.</span>, & Muthanna, A.
+          </p>
+          <div class="pub-title">
+              Truncated MobileNetV2 Sparse Vision Graph Attention Model for Explainable Monkeypox Disease Classification
+          </div>
+          <p class="pub-venue">
+              Knowledge-Based Systems, 330, 114503 (Q1, IF = 7.6)
+          </p>
+          <a class="pub-btn" href="https://doi.org/10.1016/j.knosys.2025.114503" target="_blank">View Paper</a>
+      </div>
+      
+      <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <p class="pub-authors">
+              Al-Gaashani, M. S., <span class="author-highlight">Ba Mahel, A. S.</span>, Khayyat, M. M., & Muthanna, A.
+          </p>
+          <div class="pub-title">
+              A novel multi-scale context aggregation and feature pooling network for Mpox classification
+          </div>
+          <p class="pub-venue">Biomedical Signal Processing and Control, 111, 108254</p>
+          <a class="pub-btn" href="https://doi.org/10.1016/j.bspc.2025.108254" target="_blank">View Paper</a>
+      </div>
+
+ 
+        <!-- You can copy-paste this pub-card block for the remaining papers -->
+
+    </div>
+
+</div>
+            
+</section>
+
+   
 
     <section id="projects">
         <h2>Projects</h2>
@@ -214,6 +458,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
