@@ -612,6 +612,189 @@ a:hover { text-decoration: underline; }
         </div>
     </div>
 </section>
+
+<!----------------------------------------------------------------------------!>
+    <meta charset="UTF-8">
+    <title>Academic Awards & Honors</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+        #awards {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 0 20px;
+        }
+
+        #awards h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 8px;
+            color: #1a3d8f; /* deep blue for section title */
+        }
+
+        #awards h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #1a73e8, #6b5cff);
+            border-radius: 2px;
+        }
+
+        .award-list {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .award-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 18px 22px;
+            background: #f0f4ff; /* slightly more colorful background */
+            border-left: 4px solid #1a73e8;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px rgba(26, 115, 232, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .award-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(26, 115, 232, 0.18);
+        }
+
+        .award-year {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #3a9bdc; /* medium blue for year */
+            min-width: 70px;
+        }
+
+        .award-details h3 {
+            font-size: 1.05rem;
+            margin: 0 0 6px;
+            color: #1a73e8; /* award title blue */
+        }
+
+        .award-details p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555; /* description gray */
+        }
+
+        @media (max-width: 600px) {
+            #awards h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section id="awards">
+    <h2><i class="fas fa-award"></i> Academic Awards & Honors</h2>
+
+    <div class="award-list">
+
+        <div class="award-item">
+            <div class="award-year">2015–2020</div>
+            <div class="award-details">
+                <h3>Russian Government Scholarship</h3>
+                <p>Bachelor Program, Saint Petersburg, Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2020–2022</div>
+            <div class="award-details">
+                <h3>Open Doors: Russian Scholarship Project</h3>
+                <p>Master Program, Saint Petersburg, Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2022–2023</div>
+            <div class="award-details">
+                <h3>Open Doors: Russian Scholarship Project</h3>
+                <p>PhD Program, Saint Petersburg, Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2022</div>
+            <div class="award-details">
+                <h3>Winner of Portfolio Competition Grant</h3>
+                <p>Saint Petersburg Electrotechnical University "LETI", Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2022</div>
+            <div class="award-details">
+                <h3>Graduated with Honors (Red Diploma)</h3>
+                <p>Master program in Systems and Technologies in Digital HealthCare, LETI, Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2022</div>
+            <div class="award-details">
+                <h3>Best International Master's Graduate</h3>
+                <p>Saint Petersburg Electrotechnical University "LETI", Russia</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2022–2023</div>
+            <div class="award-details">
+                <h3>UESTC University Scholarship</h3>
+                <p>Chengdu, China</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2023–2027</div>
+            <div class="award-details">
+                <h3>Chinese Government Scholarship (CSC)</h3>
+                <p>PhD Program, UESTC, Chengdu, China</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2023–2024</div>
+            <div class="award-details">
+                <h3>Second Prize Academic Achievement Award</h3>
+                <p>UESCT, Chengdu, China</p>
+            </div>
+        </div>
+
+        <div class="award-item">
+            <div class="award-year">2024–2025</div>
+            <div class="award-details">
+                <h3>First Prize Academic Achievement Award</h3>
+                <p>UESCT, Chengdu, China</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
     
 <section id="review-activity">
     <h2><i class="fas fa-user-edit"></i> Review Activities</h2>
@@ -732,6 +915,7 @@ a:hover { text-decoration: underline; }
 
 </body>
 </html>
+
 
 
 
